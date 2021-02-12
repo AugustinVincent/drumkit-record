@@ -1,0 +1,305 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+.title-area{
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-mode{
+    color: #ffffff;
+    font-family: Helvetica;
+    font-size: 50px;
+    text-shadow: 0px 5px 20px #ececec33;
+}
+
+
+
+
+
+
+.playground{
+    width: 100vw;
+    height: 70vh;
+    background: #1C1C1C;
+}
+
+.category{
+    display: flex;
+    height: 12.5%;
+    
+}
+
+.category-info{
+    width: 21vw;
+    height: 100%;
+    border-right: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.sound-area{
+    position: relative;
+    width: 79vw;
+    height: 100%;
+    border-bottom: 1px solid #707070;
+    display: flex;
+    align-items: center;
+}
+
+.time-indicator{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: #000000;
+}
+
+.last{
+    border-bottom: none;
+}
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: #121212;
+}
+
+.red-line{
+    width: 100%;
+    height: 0.5px;    
+    background: #FF1212 ;
+    opacity: 0.15;
+}
+.title-category{
+    width: 75px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+
+.control-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+}
+
+.add-sound{
+    background: url('buttons/add-button.png');
+    width: 1.5vw;
+    height: 1.5vw;
+    background-size: 1.5vw;
+}
+
+
+
+.play-button{
+    background: url('buttons/play-button.png');
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+}
+
+.reset-button{
+    background: url('buttons/refresh-button.png');
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+}
+
+
+
+
+.button-bar{
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+/* LIMIT _________________ */
+
+
+
+.add-sounds{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background: #121212;
+}
+
+.category-selected{
+    width: 130px;
+    font-size: 26px;
+    font-family: Helvetica;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 900;
+}
+
+.sound-pads{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 1.4vw;
+}
+
+section{
+    display: flex;
+    margin: 0 6vw;
+}
+
+.add-the-sound{
+    margin-right: 1.4vw;
+}
+
+.indicator{
+    position: absolute;
+    top: 0;
+    left: 20% ;
+    opacity: 0.5;
+    height: 100%;
+    width: 200px;
+    height: 100%;
+    background: red;
+    pointer-events: none;
+    transition: all 0.2. linear;
+}
+
+
+
+
+
+
+
+
+
+.add-own-sounds{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 15vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: #121212;
+}
+
+
+.button{
+    width: 80px;
+    height: 30px;
+    background: #6769ff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: Helvetica;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    outline: none;
+    margin: 10px;
+}
+
+.record-control{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 100px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    margin: 0;
+}
+
+.button-title{
+    width: 110px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.thrash-icone{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+.play-icone{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.pads{
+    width: 60px;
+    height: 60px;
+    background: #ececec;
+    border-radius: 10px;
+    margin-left: 1.4vw;
+}
+
+.speaker{
+    position: fixed;
+    height: 15vh;
+}
+
+.speaker-1{
+    bottom: 0;
+    left: 0;
+}
+.speaker-2{
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+.speaker-3{
+    top: 0;
+    left: 0;
+}
+.speaker-4{
+    top: 0;;
+    right: 0;
+    transform: rotate(180deg);
+}

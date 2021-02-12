@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Drum-kit</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="title-area">
+            <span class="title-mode">Creation drumkit</span>
+        </div>
+        <div class="playground">
+            <div class="category">
+                <div class="category-info">
+                    <span class="title-category">Bass</span>
+                    <div class="add-sound button" category="bass">Add</div>
+                </div>
+                <div class="sound-area" sound-duration="900" category="bass">
+                    <div class="time-indicator"></div>
+                    <div class="red-line"></div>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-info">
+                    <span class="title-category">Chant</span>
+                    <div class="add-sound button" category="chant">Add</div>
+                </div>
+                <div class="sound-area" sound-duration="100" category="chant">
+                    <div class="time-indicator"></div>
+                    <div class="red-line"></div>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-info">
+                    <span class="title-category">Clap</span>
+                    <div class="add-sound button" category="clap">Add</div>
+                </div>
+                <div class="sound-area" sound-duration="550" category="clap">
+                    <div class="time-indicator"></div>
+                    <div class="red-line"></div>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-info">
+                    <span class="title-category">Hithat</span>
+                    <div class="add-sound button" category="hithat">Add</div>
+                </div>
+                <div class="sound-area" sound-duration="200" category="hithat">
+                    <div class="time-indicator"></div>
+                    <div class="red-line"></div>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-info">
+                    <span class="title-category">Kick</span>
+                    <div class="add-sound button" category="kick">Add</div>
+                </div>
+                <div class="sound-area" sound-duration="150" category="kick">
+                    <div class="time-indicator"></div>
+                    <div class="red-line"></div>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-info">
+                    <span class="title-category">Snap</span>
+                    <div class="add-sound button" category="snap">Add</div>
+                </div>
+                <div class="sound-area" sound-duration="400" category="snap">
+                    <div class="time-indicator"></div>
+                    <div class="red-line"></div>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-info ">
+                    <span class="title-category">Snare</span>
+                    <div class="add-sound button" category="snare">Add</div>
+                </div>
+                <div class="sound-area" sound-duration="200" category="snare">
+                    <div class="time-indicator"></div>
+                    <div class="red-line"></div>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-info last">
+                    <span class="title-category">Your sounds</span>
+                    <div class="add-sound button" category="your-sound">Add</div>
+                </div>
+                <div class="sound-area last" category="your-sound">
+                    <div class="time-indicator"></div>
+                    <div class="red-line"></div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="control-bar">
+            <div class="play-button button-bar"></div>
+            <div class="reset-button button-bar "></div>
+            <div class="delete-button button-bar button">
+                <span class="delete">Delete</span>
+            </div>
+        </div>
+        
+    </div>
+    <div class="add-sounds">
+        <div class="category-selected">Bass</div>
+        <section>
+            <div class="sound-1 sound-pads" number="1"></div>
+            <div class="sound-2 sound-pads" number="2"></div>
+            <div class="sound-3 sound-pads" number="3"></div>
+            <div class="sound-4 sound-pads" number="4"></div>
+            <div class="sound-5 sound-pads" number="5"></div>
+            <div class="sound-6 sound-pads" number="6"></div>
+        </section>
+        <div class="close button">Close</div>
+    </div>
+
+    <div class="add-own-sounds">
+        <div class="record-control">
+            <div class="button-container">
+                <span class="button-title">Start record</span>
+                <div class="start-record">
+                    <img src="buttons/play-icone.png" alt="" class="play-icone">
+                </div>
+            </div>
+
+            <div class="button-container">
+                <span class="button-title">Delete sound</span>
+                <div class="delete-sound">
+                    <img src="buttons/thrash-icone.png" alt="" class="thrash-icone">
+                </div>
+            </div>
+
+            <div class="button-container">
+                <span class="button-title">Time of record</span>
+                <input type="number" class="record-time button">
+            </div>
+
+        </div>
+        <div class="category-selected">Your own sounds</div>
+        <section>
+            <div class="sound-1 pads" number="1"></div>
+            <div class="sound-2 pads" number="2"></div>
+            <div class="sound-3 pads" number="3"></div>
+            <div class="sound-4 pads" number="4"></div>
+            <div class="sound-5 pads" number="5"></div>
+            <div class="sound-6 pads" number="6"></div>
+        </section>
+        <div class="close-own-sound button">Close</div>
+    </div>
+    <img src="speaker.png" alt="" class="speaker-1 speaker">
+    <img src="speaker.png" alt="" class="speaker-2 speaker">
+    <img src="speaker.png" alt="" class="speaker-3 speaker">
+    <img src="speaker.png" alt="" class="speaker-4 speaker">
+    
+    <script src="script.js"></script>
+    <script src="record-voice.js"></script>
+
+
+</body>
+</html>
